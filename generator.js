@@ -15,20 +15,22 @@ let PRE_XP_EVENT = ["attack", "strength", "defense", "ranged", "prayer", "magic"
 "farming"
 ];
 		
-let KC_EVENTS = ["Abyssal Sire", "Alchemical Hydra", "Barrows Chests", "Bryophyta", "Callisto",
+let KC_EVENTS = ["Beginner clue", "Easy clue", "Medium clue", "Hard clue", "Elite clue", "Master clue", "Last man standing", 
+"Soul Wars Zeals", "Guardians of the Rift", "Abyssal Sire", "Alchemical Hydra", "Barrows Chests", "Bryophyta", "Callisto",
 "Cerberus", "Chambers of Xeric", "Challenge Mode", "Chaos Elemental", "Chaos Fanatic", "Commander Zilyana",
 "Corporeal Beast", "Crazy Archaeologist", "Dagannoth Prime", "Dagannoth Rex", "Dagannoth Supreme",
 "Deranged Archaeologist", "General Graardor", "Giant Mole", "Grotesque Guardians", "Hespori", "Kalphite Queen",
-"King Black Dragon", "Kraken", "Kree'Arra", "K'ril Tsutsaroth", "Mimic", "Nightmare",
-"Obor", "Sarachnis", "Scorpia", "Skotizo", "The Gauntlet", "The Corrupted Gauntlet", "Theatre of Blood",
+"King Black Dragon", "Kraken", "Kree'Arra", "K'ril Tsutsaroth", "Mimic", "Nex", "Nightmare", "Phosani's Nightmare",
+"Obor", "Sarachnis", "Scorpia", "Skotizo", "The Gauntlet", "The Corrupted Gauntlet", "Theatre of Blood", "Theatre of Blood: Hard Mode",
 "Thermonuclear Smoke Devil", "TzKal-Zuk", "TzTok-Jad", "Venenatis", "Vet'ion", "Vorkath", "Wintertodt",
 "Zalcano", "Zulrah"
 ];
 
-let PRE_KC_EVENT = ["sire", "hydra", "barrows", "bryo", "call", "cerb", "cox", "cm", "chaosele",
+let PRE_KC_EVENT = ["beginner", "easy", "medium", "hard", "elite", "master", "lms", "sw", "gotr", "sire", "hydra",
+"barrows", "bryo", "call", "cerb", "cox", "cm", "chaosele",
 "chaosfan", "sara", "corp", "crazyarch", "prime", "rex", "supreme", "derarch", "bandos", "mole",
-"gargs", "hespori", "kq", "kbd", "kraken", "arma", "zammy", "mimic", "nm", "obor", "sarachnis",
-"scorpia", "skotizo", "gaunt", "corrugaunt", "tob", "smokedevil", "zuk", "jad", "vene", "vetion",
+"gargs", "hespori", "kq", "kbd", "kraken", "arma", "zammy", "mimic", "nex", "nm", "nmhm", "obor", "sarachnis",
+"scorpia", "skotizo", "gaunt", "corrugaunt", "tob", "tobhm", "smokedevil", "zuk", "jad", "vene", "vetion",
 "vork", "wt", "zalca", "zulrah"
 ];
 	 

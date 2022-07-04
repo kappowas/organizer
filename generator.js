@@ -21,7 +21,7 @@ let KC_EVENTS = ["Beginner clue", "Easy clue", "Medium clue", "Hard clue", "Elit
 "Corporeal Beast", "Crazy Archaeologist", "Dagannoth Prime", "Dagannoth Rex", "Dagannoth Supreme",
 "Deranged Archaeologist", "General Graardor", "Giant Mole", "Grotesque Guardians", "Hespori", "Kalphite Queen",
 "King Black Dragon", "Kraken", "Kree'Arra", "K'ril Tsutsaroth", "Mimic", "Nex", "Nightmare", "Phosani's Nightmare",
-"Obor", "Sarachnis", "Scorpia", "Skotizo", "The Gauntlet", "The Corrupted Gauntlet", "Theatre of Blood", "Theatre of Blood: Hard Mode",
+"Obor", "Sarachnis", "Scorpia", "Skotizo", "Tempoross", "The Gauntlet", "The Corrupted Gauntlet", "Theatre of Blood", "Theatre of Blood: Hard Mode",
 "Thermonuclear Smoke Devil", "TzKal-Zuk", "TzTok-Jad", "Venenatis", "Vet'ion", "Vorkath", "Wintertodt",
 "Zalcano", "Zulrah"
 ];
@@ -30,7 +30,7 @@ let PRE_KC_EVENT = ["beginner", "easy", "medium", "hard", "elite", "master", "lm
 "barrows", "bryo", "call", "cerb", "cox", "cm", "chaosele",
 "chaosfan", "sara", "corp", "crazyarch", "prime", "rex", "supreme", "derarch", "bandos", "mole",
 "gargs", "hespori", "kq", "kbd", "kraken", "arma", "zammy", "mimic", "nex", "nm", "nmhm", "obor", "sarachnis",
-"scorpia", "skotizo", "gaunt", "corrugaunt", "tob", "tobhm", "smokedevil", "zuk", "jad", "vene", "vetion",
+"scorpia", "skotizo", "temp", "gaunt", "corrugaunt", "tob", "tobhm", "smokedevil", "zuk", "jad", "vene", "vetion",
 "vork", "wt", "zalca", "zulrah"
 ];
 	 

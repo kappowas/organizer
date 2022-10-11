@@ -1,7 +1,7 @@
 let PLUGIN, EVENT, MODE, TARGET, WINNER, START_DATE, END_DATE, START_TIME, END_TIME, STATUS = false, copy, copy_button;
 
-let ORGANIZER_EVENTS = ["Theatre of Blood", "Chambers of Xeric", "Corporeal Beast", "Armadyl", "Bandos", "Saradomin", "Zamorakian", "PK", "Chambers of Xeric Learners", "Hide and Seek", "King Black Dragon", "The Nightmare of Ashihama", "Special", "Callisto", "Chaos Elemental", "Chaos Fanatic", "Kalphite Queen", "King Black Dragon", "Sarachnis", "Scorpia", "Venenatis", "Vetion"];
-let PRE_EVENT = ["tob", "cox", "corp", "arm", "ban", "sar", "zam", "pks", "ler", "hns", "kbd", "nig", "spc", "call", "chaosele", "chaosfan", "kq", "kbd", "sarachnis", "scorpia", "vene", "vetion"];
+let ORGANIZER_EVENTS = ["Theatre of Blood", "Chambers of Xeric", "Tombs of Amascut", "Corporeal Beast", "Armadyl", "Bandos", "Saradomin", "Zamorakian", "PK", "Chambers of Xeric Learners", "Hide and Seek", "King Black Dragon", "The Nightmare of Ashihama", "Special", "Callisto", "Chaos Elemental", "Chaos Fanatic", "Kalphite Queen", "King Black Dragon", "Sarachnis", "Scorpia", "Venenatis", "Vetion"];
+let PRE_EVENT = ["tob", "cox", "toa", "corp", "arm", "ban", "sar", "zam", "pks", "ler", "hns", "kbd", "nig", "spc", "call", "chaosele", "chaosfan", "kq", "kbd", "sarachnis", "scorpia", "vene", "vetion"];
 
 let XP_EVENTS = [ "Attack", "Strength", "Defense", "Ranged", "Prayer", "Magic", "Runecrafting",
 "Construction", "Hitpoints", "Agility", "Herblore", "Thieving", "Crafting", "Fletching",
@@ -22,7 +22,7 @@ let KC_EVENTS = ["Beginner clue", "Easy clue", "Medium clue", "Hard clue", "Elit
 "Deranged Archaeologist", "General Graardor", "Giant Mole", "Grotesque Guardians", "Hespori", "Kalphite Queen",
 "King Black Dragon", "Kraken", "Kree'Arra", "K'ril Tsutsaroth", "Mimic", "Nex", "Nightmare", "Phosani's Nightmare",
 "Obor", "Sarachnis", "Scorpia", "Skotizo", "Tempoross", "The Gauntlet", "The Corrupted Gauntlet", "Theatre of Blood", "Theatre of Blood: Hard Mode",
-"Thermonuclear Smoke Devil", "TzKal-Zuk", "TzTok-Jad", "Venenatis", "Vet'ion", "Vorkath", "Wintertodt",
+"Thermonuclear Smoke Devil", "Tombs of Amascut", "Tombs of Amascut: Expert", "TzKal-Zuk", "TzTok-Jad", "Venenatis", "Vet'ion", "Vorkath", "Wintertodt",
 "Zalcano", "Zulrah"
 ];
 
@@ -30,7 +30,7 @@ let PRE_KC_EVENT = ["beginner", "easy", "medium", "hard", "elite", "master", "lm
 "barrows", "bryo", "call", "cerb", "cox", "cm", "chaosele",
 "chaosfan", "sara", "corp", "crazyarch", "prime", "rex", "supreme", "derarch", "bandos", "mole",
 "gargs", "hespori", "kq", "kbd", "kraken", "arma", "zammy", "mimic", "nex", "nm", "nmhm", "obor", "sarachnis",
-"scorpia", "skotizo", "temp", "gaunt", "corrugaunt", "tob", "tobhm", "smokedevil", "zuk", "jad", "vene", "vetion",
+"scorpia", "skotizo", "temp", "gaunt", "corrugaunt", "tob", "tobhm", "smokedevil", "toa", "toaexpert", "zuk", "jad", "vene", "vetion",
 "vork", "wt", "zalca", "zulrah"
 ];
 	 

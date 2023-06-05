@@ -1,7 +1,7 @@
 let PLUGIN, EVENT, MODE, TARGET, WINNER, START_DATE, END_DATE, START_TIME, END_TIME, STATUS = false, copy, copy_button;
 
-let ORGANIZER_EVENTS = ["Theatre of Blood", "Chambers of Xeric", "Tombs of Amascut", "Nex", "Corporeal Beast", "Armadyl", "Bandos", "Saradomin", "Zamorakian", "PK", "Chambers of Xeric Learners", "Hide and Seek", "King Black Dragon", "The Nightmare of Ashihama", "Special", "Callisto", "Chaos Elemental", "Chaos Fanatic", "Kalphite Queen", "King Black Dragon", "Sarachnis", "Scorpia", "Venenatis", "Vetion"];
-let PRE_EVENT = ["tob", "cox", "toa", "nex", "corp", "arm", "ban", "sar", "zam", "pks", "ler", "hns", "kbd", "nig", "spc", "call", "chaosele", "chaosfan", "kq", "kbd", "sarachnis", "scorpia", "vene", "vetion"];
+let ORGANIZER_EVENTS = ["Theatre of Blood", "Chambers of Xeric", "Tombs of Amascut", "Nex", "Corporeal Beast", "Armadyl", "Bandos", "Saradomin", "Zamorakian", "PK", "Chambers of Xeric Learners", "Hide and Seek", "King Black Dragon", "The Nightmare of Ashihama", "Special", "Callisto", "Chaos Elemental", "Chaos Fanatic", "Kalphite Queen", "King Black Dragon", "Sarachnis", "Scorpia", "Venenatis", "Vetion", "Wildernes prayer"];
+let PRE_EVENT = ["tob", "cox", "toa", "nex", "corp", "arm", "ban", "sar", "zam", "pks", "ler", "hns", "kbd", "nig", "spc", "call", "chaosele", "chaosfan", "kq", "kbd", "sarachnis", "scorpia", "vene", "vetion", "wildpray"];
 
 let XP_EVENTS = [ "Attack", "Strength", "Defense", "Ranged", "Prayer", "Magic", "Runecrafting",
 "Construction", "Hitpoints", "Agility", "Herblore", "Thieving", "Crafting", "Fletching",

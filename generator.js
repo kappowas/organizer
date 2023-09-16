@@ -1,13 +1,13 @@
 let PLUGIN, EVENT, MODE, TARGET, WINNER, START_DATE, END_DATE, START_TIME, END_TIME, STATUS = false, copy, copy_button;
 
-let ORGANIZER_EVENTS = ["Barrows", "Callisto", "Chambers of Xeric", "Chambers of Xeric: CM", "Chaos Elemental",
+let ORGANIZER_EVENTS = ["Easy clue", "Medium clue", "Hard clue", "Elite clue", "Master clue", "Barrows", "Callisto", "Chambers of Xeric", "Chambers of Xeric: CM", "Chaos Elemental",
 "Commander Zilyana", "Corporeal Beast", "Dagannoth Kings", "General Graardor", "Giant Mole", "Kalphite Queen", 
 "King Black Dragon", "Kree'Arra", "K'ril Tsutsaroth", "Nex", "Nightmare", "Sarachnis", "Scorpia", "Temporos",
 "Theatre of Blood", "Theatre of Blood: HM", "Tombs of Amascut", "Venenatis", "Vetion", "Wintertotd", "Zalcano",
 "PK", "Hide and Seek", "Wilderness prayer", "BINGO", "Olympo kalnas", "Specialus"];
 
 
-let PRE_EVENT = ["barrows", "calisto", "cox", "cox cm", "chaos ele", "kbd", "arma",
+let PRE_EVENT = ["easy", "medium", "hard", "elite", "master", "barrows", "calisto", "cox", "cox cm", "chaos ele", "kbd", "arma",
 "zammy", "nex", "nm", "sarachnis", "scorpia", "temporos", "tob", "tob hm", "toa", "venenatis",
 "vetion", "wt", "zalcano", "pk", "hns", "wild altar", "bingo", "olympo", "special"];
 

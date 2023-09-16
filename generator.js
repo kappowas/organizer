@@ -1,7 +1,15 @@
 let PLUGIN, EVENT, MODE, TARGET, WINNER, START_DATE, END_DATE, START_TIME, END_TIME, STATUS = false, copy, copy_button;
 
-let ORGANIZER_EVENTS = ["Theatre of Blood", "Chambers of Xeric", "Tombs of Amascut", "Nex", "Corporeal Beast", "Armadyl", "Bandos", "Saradomin", "Zamorakian", "PK", "Chambers of Xeric Learners", "Hide and Seek", "King Black Dragon", "The Nightmare of Ashihama", "Special", "Callisto", "Chaos Elemental", "Chaos Fanatic", "Kalphite Queen", "King Black Dragon", "Sarachnis", "Scorpia", "Venenatis", "Vetion", "Wildernes prayer"];
-let PRE_EVENT = ["tob", "cox", "toa", "nex", "corp", "arm", "ban", "sar", "zam", "pks", "ler", "hns", "kbd", "nig", "spc", "call", "chaosele", "chaosfan", "kq", "kbd", "sarachnis", "scorpia", "vene", "vetion", "wildpray"];
+let ORGANIZER_EVENTS = ["Barrows", "Callisto", "Chambers of Xeric", "Chambers of Xeric: CM", "Chaos Elemental",
+"Commander Zilyana", "Corporeal Beast", "Dagannoth Kings", "General Graardor", "Giant Mole", "Kalphite Queen", 
+"King Black Dragon", "Kree'Arra", "K'ril Tsutsaroth", "Nex", "Nightmare", "Sarachnis", "Scorpia", "Temporos",
+"Theatre of Blood", "Theatre of Blood: HM", "Tombs of Amascut", "Venenatis", "Vetion", "Wintertotd", "Zalcano",
+"PK", "Hide and Seek", "Wilderness prayer", "BINGO", "Olympo kalnas", "Specialus"];
+
+
+let PRE_EVENT = ["barrows", "calisto", "cox", "cox cm", "chaos ele", "kbd", "arma",
+"zammy", "nex", "nm", "sarachnis", "scorpia", "temporos", "tob", "tob hm", "toa", "venenatis",
+"vetion", "wt", "zalcano", "pk", "hns", "wild altar", "bingo", "olympo", "special"];
 
 let XP_EVENTS = [ "Attack", "Strength", "Defense", "Ranged", "Prayer", "Magic", "Runecrafting",
 "Construction", "Hitpoints", "Agility", "Herblore", "Thieving", "Crafting", "Fletching",
@@ -15,24 +23,33 @@ let PRE_XP_EVENT = ["attack", "strength", "defense", "ranged", "prayer", "magic"
 "farming"
 ];
 		
-let KC_EVENTS = ["Beginner clue", "Easy clue", "Medium clue", "Hard clue", "Elite clue", "Master clue", "Last man standing", 
-"Soul Wars Zeals", "Guardians of the Rift", "Abyssal Sire", "Alchemical Hydra", "Barrows Chests", "Bryophyta", "Callisto",
-"Cerberus", "Chambers of Xeric", "Challenge Mode", "Chaos Elemental", "Chaos Fanatic", "Commander Zilyana",
-"Corporeal Beast", "Crazy Archaeologist", "Dagannoth Prime", "Dagannoth Rex", "Dagannoth Supreme",
-"Deranged Archaeologist", "General Graardor", "Giant Mole", "Grotesque Guardians", "Hespori", "Kalphite Queen",
-"King Black Dragon", "Kraken", "Kree'Arra", "K'ril Tsutsaroth", "Mimic", "Nex", "Nightmare", "Phosani's Nightmare",
-"Obor", "Sarachnis", "Scorpia", "Skotizo", "Tempoross", "The Gauntlet", "The Corrupted Gauntlet", "Theatre of Blood", "Theatre of Blood: Hard Mode",
-"Thermonuclear Smoke Devil", "Tombs of Amascut", "Tombs of Amascut: Expert", "TzKal-Zuk", "TzTok-Jad", "Venenatis", "Vet'ion", "Vorkath", "Wintertodt",
-"Zalcano", "Zulrah"
-];
+let KC_EVENTS = [
+	"Beginner Clue", "Easy Clue", "Medium clue", "Hard Clue", "Elite CLue",	"Master Clue",
+	"Last Man Standing", "PvP Arena", "Soul Wars Zeal",	"Guardians of the Rift", "empty", "empty",
+	"Abyssal Sire",	"Alchemical Hydra",	"Artio", "Barrows Chests", "Bryophyta",	"Callisto",	"Calvar'ion",
+	"Cerberus",	"Chambers of Xeric", "CoX CM", "Chaos Elemental", "Chaos Fanatic", "Commander Zilyana",
+	"Corporeal Beast", "Crazy Archaeologist", "Dagannoth Prime", "Dagannoth Rex", "Dagannoth Supreme",
+	"Deranged Archaeologist", "Duke Sucellus", "General Graardor", "Giant Mole", "Grotesque Guardians",
+	"Hespori", "Kalphite Queen", "King Black Dragon", "Kraken",	"Kree'Arra", "K'ril Tsutsaroth", "Mimic",
+	"Nex", "Nightmare",	"Phosani's Nightmare", "Obor", "Phantom Muspah", "Sarachnis", "Scorpia", "Skotizo",
+	"Spindel", "Tempoross",	"The Gauntlet",	"The Corrupted Gauntlet", "The Leviathan", "The Whisperer",
+	"Theatre of Blood",	"Theatre of Blood: Hard Mode", "Thermonuclear Smoke Devil",	"Tombs of Amascut",
+	"ToA Expert", "TzKal-Zuk", "TzTok-Jad",	"Vardorvis", "Venenatis", "Vet'ion", "Vorkath",
+	"Wintertodt", "Zalcano", "Zulrah"
+	];
 
-let PRE_KC_EVENT = ["beginner", "easy", "medium", "hard", "elite", "master", "lms", "sw", "gotr", "sire", "hydra",
-"barrows", "bryo", "call", "cerb", "cox", "cm", "chaosele",
-"chaosfan", "sara", "corp", "crazyarch", "prime", "rex", "supreme", "derarch", "bandos", "mole",
-"gargs", "hespori", "kq", "kbd", "kraken", "arma", "zammy", "mimic", "nex", "nm", "nmhm", "obor", "sarachnis",
-"scorpia", "skotizo", "temp", "gaunt", "corrugaunt", "tob", "tobhm", "smokedevil", "toa", "toaexpert", "zuk", "jad", "vene", "vetion",
-"vork", "wt", "zalca", "zulrah"
-];
+let PRE_KC_EVENT = [
+	"beginner", "easy",	"medium", "hard", "elite", "master",
+	"lms", "pvpa", "sw", "gotr", "empty", "empty", "sire", "hydra",	"artio",
+	"barrows", "bryo", "callisto", "calvarion",	"cerberus",	"cox", "cox cm",
+	"chaos ele", "chaos fan", "sara", "corp", "crazy arch", "prime", "rex",
+	"supreme", "der arch", "duke", "bandos", "mole", "gargs", "hespori",
+	"kq", "kbd", "kraken", "arma", "zammy", "mimic", "nex",	"nm", "phosanis",
+	"obor",	"muspah", "sarachnis", "scorpia", "skotizo", "spindel",
+	"tempoross", "gauntlet", "cg", "leviathan",	"whisperer", "tob",
+	"tob hm", "smoke devil", "toa", "toa expert", "zuk", "jad",
+	"vardorvis", "venenatis", "vetion", "vorkath", "wt", "zalcano",	"zulrah"
+	];
 	 
 function Auto() {
 	PLUGIN = document.getElementById("plugin");
